@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* header */
+
+header{
+    background: linear-gradient(rgba(4,10,30,0.7), rgba(4,10,30,0.7)),url(./images/arkaplan.jpg) ;
+    min-height: 100vh ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav{
+    
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aligner{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+   
+}
+
+.rox-aligner{
+    margin-top: 20px;
+
+}
+
+.col-aligner{
+    flex-basis: 30%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+nav div a img{
+    height: 100px;
+}
+
+nav div a img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex: 1;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+
+}
+
+.nav-links ul li a::after{
+    content: '';
+    background-color: red;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+.bi-list{
+    color: white;
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.bi-list:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* text box */
+
+.text-box{
+    width: 90%;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box p{
+    margin: 10px 40px;
+    font-size: 20px;
+}
+
+.hero-btn{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.hero-btn:hover{
+    background-color: red;
+    border-color: red;
+    transition: .3s;
+
+}
+
+/* courses */
+
+.course{
+    margin: auto;
+}
+
+section h1 , footer h1{
+    font-size: 35px;
+
+}
+
+
+section p , footer p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    background-color: rgb(230, 230, 230);
+}
+
+.course-col:hover{
+    box-shadow: 0 0 10px rgba(4, 10, 30, 0.7);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* campus alanaı başlangıç */
+
+/* .campus{ 
+    background-color: antiquewhite;
+}
+*/
+
+.campus-col{
+    
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+
+}
+
+.layer{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89%;
+    height: 88%;
+    margin: 20px 20px;
+    transition: .3s;
+}
+
+.layer:hover{
+    background-color: rgba(200, 100, 50, 0.5);
+}
+
+.layer h3{
+    opacity: 0; 
+    width: 100%;
+    font-weight:bold;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+}
+
+.layer:hover h3{
+    opacity: 1;
+    bottom: 50%;
+}
+/* facilities */
+
+.facilities-col{
+    text-align: left;
+
+
+}
+
+.facilities-col img{
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.facilities-col p{
+    margin: 15px 0;
+}
+
+/* yorumlar */
+
+
+
+
+.testemonials-col{
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.testemonials-col img{
+    width: 50px;
+    border-radius: 50%;
+    
+}
+
+.testemonials-col div{
+    padding-left: 10px;
+   }
+
+.testemonials-col div i{
+    color: red;
+}
+
+/* acil ulaşım */
+
+.ua{
+    background: linear-gradient(rgba(4,10,30,0.7), rgba(4,10,30,0.7)),url(./images/ıs1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 100px 0 ;
+}
+
+.ua h1{
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 40px;
+
+}
+
+/* footer */
+
+
+footer{
+   padding-top: 10px !important;
+}
+
+footer .bi{
+    color: red;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+ }
+
+ .icons{
+    margin: 10px;
+ }
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    .nav-links ul{
+        display: none;
+    }
+
+    .bi-list{
+        display: block;
+    }
+
+    .text-box h1{
+        font-size: 40px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    
+    .ua h1{
+        font-size: 30px;
+    }
+}
